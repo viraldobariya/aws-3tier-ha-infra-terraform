@@ -51,14 +51,13 @@ RDS Database (Private DB Subnets)
 
 ### Database
 
-* RDS (MySQL/PostgreSQL)
+* RDS (MySQL)
 * Private access only
 
 ### Security
 
 * Security Groups
-* IAM Roles (optional)
-
+  
 ### Terraform Backend
 
 * S3 (Remote State Storage)
@@ -96,17 +95,14 @@ aws-3tier-ha-infra-terraform/
 modules/
   vpc/
   alb/
+  asg/
   ec2/
   rds/
-
-env/
-  dev/
 
 backend.tf
 provider.tf
 main.tf
-variables.tf
-outputs.tf
+terraform.tf
 ```
 
 ---
@@ -156,4 +152,4 @@ terraform apply
 
 ## 👨‍💻 Author
 
-Your Name
+Viral Dobariya
